@@ -2,4 +2,4 @@ build:
     docker:
       web: Dockerfile
 run:
-  web: code-server --bind-addr 0.0.0.0:$PORT
+  web: code-server --bind-addr 0.0.0.0:$PORT --config /code-server/config.yaml
