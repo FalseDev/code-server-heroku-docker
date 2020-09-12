@@ -2,9 +2,9 @@ FROM debian:latest
 
 WORKDIR /code-server
 
-COPY install_code_server .
+COPY install_code_server.sh .
 
-RUN ./install_code_server
+RUN ./install_code_server.sh
 
 USER nava
 
