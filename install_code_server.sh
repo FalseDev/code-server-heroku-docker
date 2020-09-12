@@ -1,6 +1,5 @@
 # Update and upgrade and then install code-server requirements and curl
 echo 'deb https://mega.nz/linux/MEGAsync/xUbuntu_18.04/ ./' > /etc/apt/sources.list.d/mega-nz.list
-curl -fsSL https://mega.nz/keys/MEGA_signing.key | sudo apt-key add -
 apt-get update -y && \
   apt-get upgrade -y && \
   apt-get install -y apt-utils && \
@@ -12,7 +11,8 @@ apt-get update -y && \
   libsecret-1-dev \
   python3 \
   curl \
-  megacmd \
   tmux \
   zsh  && \
+  curl -fsSL https://mega.nz/keys/MEGA_signing.key | apt-key add - && \
+  apt-get update && apt-get install megacmd && \
   curl -fsSL https://code-server.dev/install.sh | sh
