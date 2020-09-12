@@ -1,7 +1,7 @@
 # Update and upgrade and then install code-server requirements and curl
 apt-get update -y && \
   apt-get upgrade -y && \
-  sudo apt-get install -y \
+  apt-get install -y \
   build-essential \
   pkg-config \
   libx11-dev \
