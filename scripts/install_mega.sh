@@ -1,5 +1,5 @@
 # To sign mega's gpg keys
-apt-get install ca-certificates
+apt-get install ca-certificates -y
 
 # Add repo to sources
 echo 'deb https://mega.nz/linux/MEGAsync/xUbuntu_18.04/ ./' > /etc/apt/sources.list.d/mega-nz.list
