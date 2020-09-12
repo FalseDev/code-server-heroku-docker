@@ -1,7 +1,8 @@
 # Update and upgrade and then install code-server requirements and curl
 apt-get update -y && \
   apt-get upgrade -y && \
-  apt-get install -y \
+  apt-get install -y apt-utils && \
+  apt-get install -y && \
   build-essential \
   pkg-config \
   libx11-dev \
@@ -11,7 +12,6 @@ apt-get update -y && \
   curl \
   zsh
 
-npm config set python python3
-
+dpkg -i mega.deb
 
 curl -fsSL https://code-server.dev/install.sh | sh
