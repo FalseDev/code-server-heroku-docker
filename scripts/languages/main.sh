@@ -1,3 +1,3 @@
-./python.sh
-./node.sh
-./go.sh
+./scripts/languages/python.sh
+./scripts/languages/node.sh
+./scripts/languages/go.sh
