@@ -11,6 +11,6 @@ nvm use 12.18.3
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 apt update
-apt install yarn --no-install-recommends
+apt install yarn --no-install-recommends -y
 
 yarn global add ts-node-dev typescript ts-node nodemon
