@@ -12,6 +12,7 @@ apt-get update -y && \
   python3 \
   curl \
   tmux \
+  ca-certificates \
   zsh  && \
   curl -fsSL https://mega.nz/keys/MEGA_signing.key | apt-key add - && \
   apt-get update && apt-get install megacmd && \
