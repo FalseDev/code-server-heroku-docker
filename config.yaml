@@ -1,1 +1,4 @@
 auth: password
+extensions-dir: ./extensions/
+user-data-dir: ./user-data-dir/
+disable-telemetry: true
